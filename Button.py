@@ -102,6 +102,14 @@ class StartTextButton(TextButton):
         super().on_release()
         self.action_function()
 
+class RetryButton(TextButton):
+    def __init__(self, center_x, center_y, action_function):
+        super().__init__(center_x, center_y, 100, 40, "Retry", 18, "Arial")
+        self.action_function = action_function
+
+    def on_release(self):
+        super().on_release()
+        self.action_function()
 
 class StopTextButton(TextButton):
     def __init__(self, center_x, center_y, action_function):

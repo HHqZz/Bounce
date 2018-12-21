@@ -16,6 +16,9 @@ class Ball:
     def getActualSpeed(self):
         return math.sqrt(math.pow(self.vitesse.dx, 2) + math.pow(self.vitesse.dy, 2))
     
+    def resetPosition(self):
+        self.centre = Point(Constants.SCREEN_X/2, Constants.SCREEN_Y/2)
+        
     def draw(self):
         arcade.draw_circle_filled(
             self.centre.x, self.centre.y, self.radius, self.color)
