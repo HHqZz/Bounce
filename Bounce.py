@@ -112,8 +112,8 @@ class MyGame(arcade.Window):
 	def setup(self):
 		arcade.set_background_color([0,128,255])
 		#Obstacles
-		#self.createObstacles(Point(50,400), Point(200, 600), Constants.obstacle_color, Constants.obstacle_width)
-		#self.createObstacles(Point(350,300), Point(450, 300), Constants.obstacle_color, Constants.obstacle_width)
+		self.createObstacles(Point(50,400), Point(200, 600), Constants.obstacle_color, Constants.obstacle_width)
+		self.createObstacles(Point(350,300), Point(450, 300), Constants.obstacle_color, Constants.obstacle_width)
 		#Cibles	
 		self.createCible(904)
 		self.createCible(1200)
